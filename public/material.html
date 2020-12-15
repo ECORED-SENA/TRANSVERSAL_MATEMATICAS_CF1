@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Matemáticas básicas</title>
+        <meta meta name="description" content="En este guión se busca hacer un acercamiento conceptual a todo lo relacionado con los conjuntos numéricos (naturales, enteros, racionales, irracionales reales y complejos).">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link text-white" href="#ResultadosAprendizaje"><span>Resultados de aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link text-white" href="#IndiceTematico"><span>Índice temático</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link text-white" href="#Creditos"><span>Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Matemáticas</h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Matemáticas básicas</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">En este guión se busca hacer un acercamiento conceptual a todo lo relacionado con los conjuntos numéricos (naturales, enteros, racionales, irracionales reales y complejos).</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <ul class="bg-color-dark">
+                            <li><span>240201517 - 01 Identificar modelos matemáticos de acuerdo con los requerimientos del problema planteado en contextos sociales y productivo.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <ul class="list-group list-group-flush list my-n3 nav-temas"></ul>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-play"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-1">Introducción</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-1">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-2">Comunidades étnicas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-2">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-3">Aspectos ambientales</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-3">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-4">Caracterización</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-4">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-sort-alpha-asc"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#glosario">Glosario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#glosario">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-book"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#referencias">Referencias bibliográficas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#referencias">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="tema-1">
+                <div class="container" id="intro">
+                    <div class="header-ecored">
+                        <h1>1. Introducción</h1>
+                    </div>
+                    <div class="card shadow">
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/2GzNRY2iYNg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Los números naturales surgieron de la necesidad del ser humano de negociar y ordenar cosas, el hombre tuvo la necesidad de representar las cantidades de lo que tenía para saber con qué contaba exactamente. De ahí surgió la necesidad de crear símbolos que representaran esas cantidades.</p>
+                                <p class="mt-4">A partir de esta necesidad el hombre crea lo que hoy conocemos como números naturales. Estos son los primeros que surgen en las distintas civilizaciones debido a que contar y ordenar elementos son las tareas más elementales en el tratamiento de las cantidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container" id="conjuntos">
+                    <div class="header-ecored">
+                        <h1>1. Conjuntos numéricos</h1>
+                    </div>
+                    <div class="card shadow"><img class="img-fluid" src="assets/images/pages/img1.png" style="max-width: 100%">
+                        <div class="card-body">
+                            <h3>Bienvenidos</h3>
+                            <p class="mb-4">El desarrollo de la humanidad se ha dado a partir de las dificultades o necesidades que se presentan a lo largo de la historia, por ejemplo, el hombre primitivo sintió hambre entonces tuvo la necesidad de buscar comida fuese cazándola, colectándola o cultivándola; sintió frío entonces desarrolló el fuego y encontró la manera de cubrirse con pieles de animales.</p>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <p>Así mismo pasó con el desarrollo de las matemáticas, más específicamente con el surgimiento de los números y los conjuntos numéricos que eran utilizados para contar, hacer cálculos, resolver problemas, y demás actividades que requerían de la implementación del uso de las matemáticas.</p>
+                                    <p class="mt-4">En este espacio, nos ocuparemos en el estudio de los conjuntos numéricos: ¿qué son? ¿para qué sirven? ¿cómo se aplican?, conceptos que nos ayudarán a entender la naturaleza de los números y poder comprender el desarrollo de los temas posteriores de este curso.</p>
+                                    <p class="mt-4">Para el SENA es importante el desarrollo de las competencias en el ámbito educativo, laboral y personal.</p>
+                                </div>
+                                <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img2.png" style="max-width: 60%"></div>
+                            </div>
+                        </div>
+                    </div><br id="numero1">
+                    <div class="header-ecored">
+                        <h2>1.1 Números naturales</h2>
+                    </div>
+                    <div class="jumbotron bg-white shadow"><img class="img-fluid img-a" src="assets/images/pages/img3.png" style="max-width: 60%">
+                        <p>Daremos inicio con el conjunto de los números naturales que se denotan con la letra <b>(N)</b>.</p>
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center bg-color1">
+                                <p class="mb-0"><b>N</b> = { 1, 2, 3, 4, 5, 6, 7,.......}</p>
+                            </div>
+                        </div>
+                        <p class="mt-3">El conjunto de los números naturales surgió de la necesidad de contar, lo cual se manifiesta en el ser humano desde sus inicios.</p>
+                        <p>Este conjunto se caracteriza porque:</p>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img4.png" style="max-width: 60%"></div>
+                            <div class="col">
+                                <div class="col-11">
+                                    <div class="list align-items-start mt-4">
+                                        <div class="list__item">
+                                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg"></div>
+                                        </div>
+                                        <div class="list__txt">
+                                            <p class="mt-1">Tiene un número infinito de elementos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="list align-items-start mt-4">
+                                        <div class="list__item">
+                                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg"></div>
+                                        </div>
+                                        <div class="list__txt">
+                                            <p class="mt-1">Cada elemento tiene un sucesor y todos, excepto el 1, un antecesor.</p>
+                                        </div>
+                                    </div>
+                                    <div class="list align-items-start mt-4">
+                                        <div class="list__item">
+                                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg"></div>
+                                        </div>
+                                        <div class="list__txt">
+                                            <p class="mt-1">El sucesor de un número natural, se obtiene sumando uno (+1); el antecesor se obtiene restando uno (-1).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="mt-5 text-center txt-color1">Representación en la recta numérica de los naturales</h3><img class="img-fluid img-a" src="assets/images/pages/img5.png" style="max-width: 100%">
+                        <div class="row mt-6 justify-content-center">
+                            <div class="col-8 my5 bg-color2 py-5 pl-6 pr-4">
+                                <h4 class="mt-4 text-center txt-color1 ml-6">Números Naturales</h4>
+                                <div class="hr ml-6"></div>
+                                <h1 class="text-center txt-color1 ml-6">3 + 1 = 4</h1>
+                                <p>Utilizados para labores de conteo de objetos. Lo constituyen los enteros positivos <b>(1, 2, 3, 4, 5, 6, …)</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container" id="aspectos">
+                    <div class="header-ecored">
+                        <h1>2. Aspectos ambientales</h1>
+                    </div>
+                    <section class="mt-5 pt-5">
+                        <div class="row mt-5 pt-5 justify-content-center">
+                            <div class="col-10">
+                                <div class="card bg-color1">
+                                    <div class="card-body text-center">
+                                        <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img4.png"></div>
+                                        <p class="text-white text-left mt-4">La oferta de los recursos naturales que hasta hace algunos años parecía inagotable, hoy en día ha disminuido debido al aprovechamiento irracional de estos, trayendo consigo la contaminación del aire, suelo, agua, disminución o extinción de la flora y fauna, todas estas problemáticas son consecuencia de las acciones humanas que afectan considerablemente los ecosistemas. </p>
+                                        <p class="text-white text-left mt-4">Colombia es uno de los países con mayor biodiversidad biológica en el mundo y la mayoría de las áreas donde se concentran las riquezas de estos recursos naturales son territorio de comunidades étnicas. Henao (2012) define el territorio desde la perspectiva de grupo étnicos como “la unidad de atributos culturales, biológicos, sociales, políticos, que garantiza su pervivencia, donde se vive y se proyecta su presente y su futuro” (p.10). De cierta manera cualquier acción de intervención que involucre la relación entre la comunidad étnica y el medio ambiente debe estar enfocada hacia la preservación de los recursos, la cultura y costumbres.</p>
+                                        <p class="text-white text-left mt-4">Conservar y proteger la biodiversidad y la identidad cultural de los pueblos étnicos es un compromiso social y ambiental que está ligado a la preservación de todos los recursos del medio ambiente incluyendo al ser humano, cualquier actividad que afecte el equilibrio biológico pone en riesgo no solo la especie afectada sino la salud de toda una comunidad. Con el fin de preservar esos territorios étnicos diversos, se deben tomar acciones para mitigar los efectos adversos generados por las actividades domésticas, productivas, culturales y económicas que desarrollan los grupos étnicos en sus territorios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><br id="factores">
+                    <div class="header-ecored">
+                        <h2>2.1 Factores ambientales</h2>
+                    </div>
+                    <div class="jumbotron bg-white shadow">
+                        <p>El ser humano siempre ha necesitado del medio ambiente para desarrollarse como individuo, estas interrelaciones pueden generar modificaciones que provocan problemáticas generalmente a mediano y largo plazo difícil de valorar y que alteran la dinámica y equilibrio de los ecosistemas. La contaminación que el hombre produce en estos ecosistemas también afecta al ser humano en la medida que disminuye la oferta y la calidad de los recursos, impactando directamente el estado de salud.</p>
+                        <p>Actualmente el término biodiversidad ha generado interés económico por el uso de los recursos naturales en la fabricación de medicamentos, alimentos, cosméticos y otras actividades extractivas, consecuencia de estas explotaciones se han desaparecido muchos recursos valiosos de los territorios y se ha generado conflictos por el dominio de estas tierras.</p>
+                        <p>Algunas de las causas directas en la pérdida de biodiversidad generadas por el ser humano son:</p><img class="img-fluid img-a" src="assets/images/pages/img5.png" style="max-width: 40%">
+                        <p>El impacto ambiental de las actividades humanas provoca la contaminación de los factores ambientales para la supervivencia de las especies en un ecosistema. </p>
+                        <p>Son considerados factores ambientales:</p><img class="img-fluid img-a" src="assets/images/pages/img6.png" style="max-width: 100%">
+                        <p>La calidad y conservación de todos los factores ambientales es directamente proporcional al impacto generado en las interrelaciones entre sí. La mínima alteración en el entorno socio ambiental puede presentar impactos como la presencia de polvo, ruido, malos olores, insalubridad, generación de residuos tóxicos, los cuales afectan a las comunidades que los provocan o las que habitan en el área de influencias generando alteraciones en la salud y enfermedades a largo plazo. </p>
+                        <p>Los impactos ambientales no solo lo generan las actividades cotidianas y los habitantes de una comunidad. La mayoría de estos impactos están asociados a los grandes proyectos que llegan a estas zonas afectando todo el entorno, es por esto que se requiere de la elaboración de una línea base para determinar el estado en el que se encuentran los recursos y ejercer control de todas las acciones antes, durante y después del proceso de intervención.</p>
+                    </div><br id="evaluacion">
+                    <div class="header-ecored">
+                        <h2>2.2 Evaluación del impacto ambiental</h2>
+                    </div>
+                    <div class="jumbotron bg-white shadow">
+                        <h3>Protección de la calidad ambiental y calidad de vida humana</h3>
+                        <p>El medio ambiente le brinda al ser humano múltiples servicios de gran importancia para el crecimiento económico y social. La naturaleza aporta elementos y fuentes de energía que se hacen indispensables para la subsistencia; pero en contraste esta recibe sus vertimientos contaminantes resultantes de los diferentes modos de producción e interacción del hombre y medio, considerados importantes para el bienestar humano y distintas formas de vida.</p>
+                        <p>El nivel de vulnerabilidad ambiental se asocia al modelo de desarrollo, disponibilidad y fragilidad de los medios de subsistencia, la sobrepoblación, la cultura y la organización social de una comunidad, generando acciones favorables o adversas al medio ambiente o algunos de sus componentes provocados en la ejecución de actividades de aprovechamiento del espacio o del recurso ambiental.</p>
+                        <p>La fragilidad medioambiental tiene en cuenta varios factores, por ejemplo:</p><img class="img-fluid img-a" src="assets/images/pages/img7.png" style="max-width: 40%">
+                        <p>Otro ejemplo son las amenazas naturales, socio naturales o antrópicas como la sensibilidad o debilidad de los elementos anteriormente expuestos.</p>
+                        <p>Una vez tomada la decisión de avanzar en cualquier proyecto que representa alguna afectación al medio, se debe realizar una Evaluación de Impacto Ambiental simple (EIA), acorde con el procedimiento administrativo legalmente establecido.</p>
+                        <p>La Evaluación del Impacto Ambiental es la herramienta para gestionar la protección del medio ambiente y valorar los impactos ambientales, identificando la relación de causa-efecto que influyen sobre el medio ambiente, la salud humana y el ecosistema producto de las actividades humanas, con el fin de predecir, valorar, interpretar y prevenir. Esta evaluación facilita la toma de decisiones y gestiona la protección del medio ambiente con las comunidades en los proyectos, planes o programas que se desarrollen en sus territorios.</p><img class="img-fluid img-a" src="assets/images/pages/img8.png" style="max-width: 100%">
+                        <p>La participación de la comunidad étnica en la evaluación de impacto ambiental es fundamental, son ellos los que ejercen las acciones al medio ambiente generando cambios positivos o negativos que pongan en peligro la biodiversidad del entorno, es por esto que de acuerdo a la inclusión de las comunidades étnicas se destaca que los proyectos que requieran licencia ambiental por parte de alguna autoridad como ANLA, CAR, CDS, deben contar con un certificado expedido por el Ministerio del Interior en cuanto a Consulta Previa, de acuerdo a la normatividad vigente.</p>
+                    </div>
+                    <div class="card shadow"><img class="img-fluid" src="assets/images/pages/img9.png" style="max-width: 100%">
+                        <div class="card-body bg-color2">
+                            <p>La evaluación del impacto ambiental también permite identificar la vulnerabilidad en la que se encuentra el estado de salud de una población, facilitando de esta manera el diagnóstico de factores y la toma de decisiones para mitigar o corregir esta situación.</p>
+                        </div>
+                    </div><br id="normatividad">
+                    <div class="header-ecored">
+                        <h2>2.3 Normatividad aplicada al medio ambiente</h2>
+                    </div>
+                    <div class="jumbotron bg-white shadow">
+                        <p>En el siguiente listado, se realiza la compilación de la normatividad ambiental aplicable para Colombia.</p>
+                        <div class="row justify-content-center px-sm-2 px-md-5 py-5">
+                            <div class="col-12 col-md-10">
+                                <section>
+                                    <div class="timeline-card-wrapper tl--borders pt-5">
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1974</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Decreto 2811</b></p>
+                                                <p>Código nacional de los recursos naturales renovables y de protección del medio ambiente.</p>
+                                                <section class="mb-4">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.minambiente.gov.co/images/GestionIntegraldelRecursoHidrico/pdf/normativa/Decreto_2811_de_1974.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Decreto 2811 del 18 de diciembre de 1974</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                                <p>Por el cual se dicta el Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.icbf.gov.co/cargues/avance/docs/decreto_2811_1974.htm" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Decreto 2811 del 18 de 1974</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1978</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b> Decreto 1681</b></p>
+                                                <p>Sobre los recursos hidrobiológicos. Para asegurar la conservación, el fomento y el aprovechamiento de los recursos hidrobiológicos y del medio acuático.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=8228" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Decreto 1681 de 1978</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1979</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Ley 09</b></p>
+                                                <p>Código sanitario, su objeto principal responde a la conservación de la salud y el bienestar humano.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.minsalud.gov.co/Normatividad_Nuevo/LEY%200009%20DE%201979.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Ley 9 de 1979</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1990</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Ley 30</b></p>
+                                                <p>Por medio de la cual se aprueba el Convenio de Viena para la Protección de la Capa de Ozono. Viena, 22 de marzo de 1985.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.icbf.gov.co/cargues/avance/docs/ley_0030_1990.htm" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Ley 30 de 1990</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1991</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Constitución Política de Colombia</b></p>
+                                                <p><b>Art 49</b>. Atención de la salud y saneamiento ambiental.</p>
+                                                <p><b>Art 58</b>. Función ecológica de la propiedad privada.</p>
+                                                <p><b>Art 99</b>. Establece la obligatoriedad de tramitar el respectivo permiso de explotación de material de arrastre.</p>
+                                                <p><b>Arts. 77-78</b>. Clasificación de aguas.</p>
+                                                <p><b>Arts. 86 -89</b>. Derecho a uso del agua.</p>
+                                                <p><b>Art 95</b>. Protección de los recursos culturales y naturales del país.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://pdba.georgetown.edu/Constitutions/Colombia/colombia91.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Constitución politica de Colombia 1991</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1992</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Lay 29</b></p>
+                                                <p>Por medio de la cual se aprueba el "Protocolo de Montreal relativo a las sustancias agotadoras de la capa de ozono".</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.icbf.gov.co/cargues/avance/docs/ley_0029_1992.htm" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Ley 29 de 1992</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1993</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Lay 99</b></p>
+                                                <p>Mediante el cual se crea el Ministerio de Ambiente y se organiza la administración de los recursos naturales a nivel regional. Se crean o redefinen las funciones de las Corporaciones Autónomas Regionales.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="http://www.secretariasenado.gov.co/senado/basedoc/ley_0099_1993.html" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Ley 99 de 1993</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1995</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Decreto 2107</b></p>
+                                                <p>Por medio del cual se modifica parcialmente el decreto 948 de 1995 que contiene el reglamento de Protección y control de la calidad del aire.</p>
+                                                <section class="mb-4">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.minambiente.gov.co/images/BosquesBiodiversidadyServiciosEcosistemicos/pdf/Normativa/Decretos/dec_2107_301195.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Decreto 2107 de 1995</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                                <p><b>Documento CONPES 1750</b></p>
+                                                <p>Establece las políticas de manejo de las aguas.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="http://www.upme.gov.co/guia_ambiental/carbon/gestion/politica/normativ/normativ.htm#BM2_8_Normatividad_sobre_el_recurso_h%C3%ADdr" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Normatividad sobre el recurso hídrico</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>1996</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Decreto 605 de 1996</b></p>
+                                                <p>Reglamenta los procedimientos de potabilización y suministro de agua para consumo humano.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1358" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Decreto 605 de 1996</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>2001</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Ley 685</b></p>
+                                                <p>Por el cual se expide el Código de Minas y se dictan otras disposiciones.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="http://www.secretariasenado.gov.co/senado/basedoc/ley_0685_2001.html" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Ley 685 de 2001</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>2015</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Decreto 2015</b></p>
+                                                <p>Por medio del cual se expide el Decreto Único Reglamentario del Sector Ambiente y Desarrollo Sostenible.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.parquesnacionales.gov.co/portal/wp-content/uploads/2013/08/Decreto-Unico-Reglamentario-Sector-Ambiental-1076-Mayo-2015.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Decreto 1076 de 2015</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-card">
+                                            <div class="timeline-card__head">
+                                                <h3>2017</h3>
+                                            </div>
+                                            <div class="timeline-card__body">
+                                                <p><b>Resolución 2254</b></p>
+                                                <p>Por la cual se adopta la norma de calidad del aire ambiente y se dictan otras disposiciones.</p>
+                                                <section>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><a class="media-link" href="https://www.minambiente.gov.co/images/normativa/app/resoluciones/96-res%202254%20de%202017.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="">
+                                                                <div class="media-link-title">
+                                                                    <p>Resolución 2254 de 2017</p>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container" id="caracterizacion">
+                    <div class="header-ecored">
+                        <h1>3. Caracterización</h1>
+                    </div>
+                    <div class="jumbotron bg-white shadow">
+                        <p>Conocer el contexto socio ambiental de la comunidad étnica de manera integral. En Colombia la diversidad étnica hace referencia al reconocimiento y existencia de tres grupos étnicos: comunidades negras, afrocolombianas, raizales y palenqueras- NARP, pueblos indígenas y el pueblo rom o gitano. Con el fin de preservar la identidad étnica del país se busca implementar acciones que permitan la inclusión con enfoque diferencial étnico en las diversas intervenciones que se desarrollen en sus territorios, promoviendo la participación armónica en las decisiones que afecten su vida social, cultural, económica, ambiental productiva y política. Se hace necesario que los actores involucrados o que intervienen con las comunidades étnicas desarrollen un estudio descriptivo donde se recolecta información cualitativa y cuantitativa con el objeto de conocer la organización de la comunidad étnica, su cosmovisión y modo de vivir.</p>
+                        <p>El estudio inicial de la comunidad étnica se define como caracterización, donde se aplican instrumentos y técnicas que permitan reconocer el entorno, analizar la dinámica social, identificar las prácticas productivas y culturales de un territorio, creando una relación colaborativa entre la comunidad y los actores con una mirada integral del espacio.</p>
+                        <p>La caracterización de una comunidad se puede llevar a cabo de diferentes contextos, se puede realizar dependiendo del punto de interés de la intervención con que se vaya a trabajar, abarcando aspectos económicos, productivos, políticos, organizacionales, ambientales o sociales.</p>
+                    </div><br id="caracterizacion1">
+                    <div class="header-ecored">
+                        <h2>3.1 Caracterización socio ambiental de comunidades étnicas</h2>
+                    </div>
+                    <div class="card shadow"><img class="img-fluid" src="assets/images/pages/img10.png" style="max-width: 100%">
+                        <div class="card-body">
+                            <p class="mb-4">El concepto socio ambiental está relacionado con una visión integral entre aspectos ambientales y sociales de las comunidades étnicas, a través de la descripción de las dinámicas del territorio para conocer el estado del uso o vulnerabilidad en el que se encuentran la oferta ambiental en relación con el grado de interacción social del grupo étnico.</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="table1"><b>Ámbito de lo social</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table2">Presencia de grupo humanos.<p>(demografía)</p>
+                                                    <p class="mt-4">Relaciones entre grupos humanos.</p>
+                                                    <p>(política, económica)</p>
+                                                    <p class="mt-4">Forma de vida de los grupos humanos.</p>
+                                                    <p>(condiciones de vida)</p>
+                                                    <p class="mt-4">Valores, actitudes y comportamientos de los grupos humanos.</p>
+                                                    <p>(cultura)</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-4">
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="table1"><b>Ámbito de intersección entre lo social y lo ambiental</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table2">Acción del ser humano sobre el medio ambiente e incidencia de este sobre el ámbito social.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-4">
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="table1"><b>Ámbito de lo ambiental</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table2">Medio natural <p>Aire</p>
+                                                    <p>Agua</p>
+                                                    <p>Suelo</p>
+                                                    <p>Flora</p>
+                                                    <p>Fauna</p>
+                                                    <p>Subsuelo</p>
+                                                    <p>Medio transformado</p>
+                                                    <p>Rural </p>
+                                                    <p>Urbano</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>La relación que existe entre los elementos del ámbito social, ambiental y las formas de presión que ejercen las comunidades sobre el medio ambiente (consumo de recursos, disposición de desechos) definen el estado en el que se encuentra el entorno socio ambiental de una comunidad.</p>
+                            <p class="mt-4">La caracterización permite la recolección, procesamiento, análisis y difusión de la información recolectada, los resultados recogidos facilitan la toma de decisiones y la planificación de acciones que contribuyan con el mejoramiento de las condiciones socio ambientales encontradas. Se cuenta con una serie de técnicas e instrumentos que se emplean en los diferentes momentos permitiendo la determinación de los principales factores socio ambientales de la comunidad étnica.</p><img class="img-fluid img-a" src="assets/images/pages/img11.png" style="max-width: 100%">
+                        </div>
+                    </div><br id="tecnicas">
+                    <div class="header-ecored">
+                        <h2>3.2 Técnicas e instrumentos para la caracterización</h2>
+                    </div>
+                    <div class="card shadow">
+                        <div class="card-body bg-color3">
+                            <div class="row p-4 my-5">
+                                <div class="col-12 col-md-6">
+                                    <p>Toda persona que inicia la intervención con las comunidades étnicas deben prepararse de la mejor manera a través de la consulta de diferentes fuentes, sin embargo, para complementar el conocimiento es necesario realizar visitas a los lugares donde habitan los grupos étnicos donde se interactúe directamente con ellos, logrando observar las condiciones de vida reales permitiendo recopilar información verídica y real.</p>
+                                    <p class="mt-4">Los resultados que proporciona la aplicación de las técnicas o instrumentos en la caracterización, son de gran utilidad como fuente secundaria de consulta para otros actores que se involucren a futuro con la comunidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 shadow">
+                        <div class="col-12 px-0">
+                            <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img class="d-block w-100" src="assets/images/pages/slice-01.png" alt="0"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-02.png" alt="1"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-03.png" alt="2"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-04.png" alt="3"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-05.png" alt="4"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-06.png" alt="5"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-07.png" alt="6"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-08.png" alt="7"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-09.png" alt="8"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-10.png" alt="9"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-11.png" alt="10"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-12.png" alt="11"></div>
+                                    <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/slice-13.png" alt="12"></div>
+                                </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                            </div>
+                        </div>
+                    </div><br id="analisis">
+                    <div class="header-ecored">
+                        <h2>3.3 Análisis de información de la caracterización</h2>
+                    </div>
+                    <div class="jumbotron bg-white shadow">
+                        <p>Una vez recolectada la información a través de las técnicas e instrumentos seleccionados y aplicados, se interpreta la información obtenida y se analiza para facilitar la toma de decisiones y proyectar acciones correspondientes.</p>
+                        <p>El análisis de la información se puede llevar a cabo de manera cualitativa o cuantitativa según la metodología seleccionada.</p>
+                        <h3 class="mt-6">El análisis cuantitativo</h3><img class="img-fluid img-a" src="assets/images/pages/img13.png" style="max-width: 60%">
+                        <p>Implica el uso de valores numéricos a través de variables e indicadores que permita obtener información sobre el estado de la relación del medio ambiente y sociedad, se emplea en el caso que se quiere obtener datos estadísticos de la comunidad étnica, permitiendo medir elementos que influyan en la dinámica comportamental de los individuos. </p>
+                        <p><b>Ejemplo</b>: ¿cuántas familias hacen uso del río para las actividades agrícolas? ¿Cuántas personas no tienen acceso al alcantarillado?</p>
+                        <p>Las ventajas de este método son la objetividad y neutralidad en el análisis de la información, se obtienen resultados representativos, los datos estadísticos respaldan lo observado y vivenciado en la comunidad, y se obtienen datos confiables que facilita la toma de decisiones.</p>
+                        <h3 class="mt-6">El análisis cualitativo</h3><img class="img-fluid img-a" src="assets/images/pages/img14.png" style="max-width: 60%">
+                        <p>Busca proyectar conclusiones a través de la interpretación del equipo de trabajo que haya realizado la caracterización, comprendiendo las lógicas de pensamiento que guían las acciones sociales comprendiendo la cultura y cosmovisión. Este análisis se enfoca en los aspectos vivenciales y de interacción con la comunidad étnica teniendo en cuenta evitar involucrarse y emitir juicios que incluyan y desvíen el objetivo de la investigación.</p>
+                        <p>Estos métodos de análisis se complementan a tal manera que el cuantitativo respalda y soporta el análisis cualitativo otorgando al informe de caracterización de la comunidad étnica veracidad, confiabilidad y calidad.</p>
+                        <p>La información recolectada se documenta y se estructura a través de un informe en el cual se describe todos los aspectos geográficos, demográficos, organizacionales, culturales, ambientales, productivos y económicos.</p>
+                        <p>Analizados, en el marco del ámbito social y ambiental en concordancia con las formas de presión que ejercen las comunidades étnicas sobre el medio ambiente (consumo de recursos, disposición de desechos).</p>
+                        <p>Herramientas como matrices, diagramas, mapas, gráficas, tablas facilitan la descripción e interpretación de la información.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p> <strong class="mr-2">Caracterización territorial:</strong>información económica, social, cultural entre otras, de un espacio o lugar de la geografía.</p>
+                        <p> <strong class="mr-2">Concesión:</strong>acción que se requiere cuando se hace uso continuo del recurso, su utilización es con fines comerciales.</p>
+                        <p> <strong class="mr-2">Consejo comunitario:</strong>se denomina a la institucionalidad de las comunidades con ascendencia afrocolombiana y que cuentan con una cultura propia, además de compartir una historia, tradiciones y costumbres, tienen persona jurídica y dentro de sus funciones están la de ejercer autoridad interna dentro de las tierras de las comunidades, de acuerdo con los mandatos constitucionales.</p>
+                        <p> <strong class="mr-2">Contexto:</strong>se define por las dimensiones espaciales y temporales. En un sentido de referencia contiene información necesaria para comprender el sentido y significado de acciones, enunciados, normas etc., de un conjunto de sujetos.</p>
+                        <p> <strong class="mr-2">Entorno:</strong>interacción activa de las personas con el medio que los rodea (espacio físico, biológico, ecosistema y comunidad), es un ambiente de construcción colectiva donde se identifica por tener un espacio físico definido, grupo de personas con roles y una estructura organización.</p>
+                        <p> <strong class="mr-2">Permiso:</strong>solicitud que se requiere cuando corresponde a un uso continuado del recurso y es de consumo doméstico.</p>
+                        <p> <strong class="mr-2">Resguardo indígena:</strong>institución legal y sociopolítica de carácter especial, conformada por una comunidad o una parcialidad indígena, con un título de propiedad comunitario. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Nombre del documento o material</th>
+                                    <th>Tipo de material</th>
+                                    <th>Enlace del recurso</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Departamento Nacional de Planeación. 2010. Aspectos básicos grupo étnico indígenas. Dirección de desarrollo territorial sostenible.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/Aspectos%20b%C3%A1sicos%20grupo%20%C3%A9tnico%20ind%C3%ADgena.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Departamento Nacional de Planeación-DNP. (2010). Pueblo Rom-Gitano-de Colombia. Haciendo camino al andar. Bogotá. DNP.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/Pueblo%20Rrom%20Gitano.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>GEILFUS, F. (2002). 80 Herramientas para el desarrollo participativo. Diagnóstico, planificación, monitoreo y evaluación.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="http://repiica.iica.int/docs/B0850e/B0850e.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Sterimberg, E. G., Sánchez, C. Z., Forero, A. C., & J., J. C. (2004). Diseño de un sistema de indicadores socioambientales para el distrito capital de Bogotá.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://core.ac.uk/download/pdf/7082118.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Ministerio del Interior. (2016). El enfoque diferencial y étnico en la política pública de víctimas del conflicto armado.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://gapv.mininterior.gov.co/sites/default/files/cartilla_enfoque_diferencial_fin_1.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>USAID, OIM. (2016). Enfoque Étnico.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://www.unidadvictimas.gov.co/sites/default/files/documentosbiblioteca/etnicos.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>USAID. (2016) Lineamientos para la implementación del enfoque de derechos y la atención diferencial a grupos étnicos.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://pdf.usaid.gov/pdf_docs/PA00M7Q7.pdf" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Van der hamm , Frieri, Navarrete y Zamora . (2012). Herramientas para la formación en contextos interculturales.</td>
+                                    <td>Pdf</td>
+                                    <td> <a href="https://repositorio.sena.edu.co/handle/11404/2633" target="_blank"><span class="fa fa-file" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Agencia de los Estados Unidos para el Desarrollo Internacional-USAID. (2016). Lineamientos para la implementación del enfoque de derechos y la atención diferencial a grupos étnicos.<a class="ml-2" href="https://pdf.usaid.gov/pdf_docs/PA00M7Q7.pdf" target="_blank">https://pdf.usaid.gov/pdf_docs/PA00M7Q7.pdf</a></p>
+                        <hr>
+                        <p>Geilfus, F. (2002). 80 Herramientas para el Desarrollo Participativo.<a class="ml-2" href="http://repiica.iica.int/docs/B0850e/B0850e.pdf" target="_blank">http://repiica.iica.int/docs/B0850e/B0850e.pdf</a></p>
+                        <hr>
+                        <p>Hammen, M. c., Sandra Frieri, M. P., &amp; Zamora, N. C. (2012). Herramientas para la Formación en Contextos Interculturales.<a class="ml-2" href="https://hdl.handle.net/11404/2633" target="_blank">https://hdl.handle.net/11404/2633</a></p>
+                        <hr>
+                        <p>Henao, C. I. (2012). Formación en gestión ambiental en grupos étnico. conceptos y principios.</p>
+                        <hr>
+                        <p>Ministerio del interior República de Colombia. (s.f.). Cartilla El enfoque diferencial y Étnico en la política pública de víctimas del conflicto armado.<a class="ml-2" href="https://gapv.mininterior.gov.co/sites/default/files/cartilla_enfoque_diferencial_fin_1.pdf" target="_blank">https://gapv.mininterior.gov.co/sites/default/files/cartilla_enfoque_diferencial_fin_1.pdf</a></p>
+                        <hr>
+                        <p>Ravanal, V. M. (2006). El enfoque Comunitario. Estudio de sus modelos de base.<a class="ml-2" href="http://repositorio.uchile.cl/bitstream/handle/2250/122235/martinez-ravanal_el-enfoque-comunitario.pdf?sequence=1&amp;isAllowed=y" target="_blank">http://repositorio.uchile.cl/bitstream/handle/2250/122235/martinez-ravanal_el-enfoque-comunitario.pdf?sequence=1&amp;isAllowed=y</a></p>
+                        <hr>
+                        <p>Sterimberg, E. G., Sánchez, C. Z., Forero, A. C., &amp; J., J. C. (2004). Diseño de un sistema de indicadores socioambientales para el distrito capital de Bogota.<a class="ml-2" href="https://core.ac.uk/download/pdf/7082118.pdf" target="_blank">https://core.ac.uk/download/pdf/7082118.pdf</a></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzón</strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura </span><br><span class="text-small">Regional Santander</span></p>
+                        <p class="footer-texto mb-2"><strong>Oscar Andrés Hernández</strong><br /><span class="text-small">Experta tematica<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Servicio y Gestión Empresarial</span><br><span class="text-small">Regional Antioquia</span></p>
+                        <p class="footer-texto mb-2"><strong>Nathaly Ramírez</strong><br /><span class="text-small">Experto tematico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Formación en Diseño y Confección y Moda</span><br><span class="text-small">Regional Antioquia</span></p>
+                        <p class="footer-texto mb-2"><strong>Carlos Andrés Rodríguez</strong><br /><span class="text-small">Diseñador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y Metrología</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Gloria Esperanza Ortiz Russi</strong><br /><span class="text-small">Evaluador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y Metrología</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Martha Isabel Martínez Vargas</strong><br /><span class="text-small">Revisora de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro Industrial Del Diseño Y La Manufactura</span><br><span class="text-small">Regional Santander</span></p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto mb-2"> <strong>José Jaime Luis Tang Pinzón</strong><br /><span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto mb-2"><strong>Jhon Jairo Urueta Alvarez</strong><br /><span class="text-small">Desarrollo Front-End<br /></span></p>
+                        <p class="footer-texto mb-2"><span class="text-small text-uppercase">Centro industrial del diseño y la manufactura </span><br><span class="text-small">Regional Santander</span></p>
+                        <h4 class="footer-subtitulo-2 mt-4">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"> <strong>Brayan Steven Pinto Diaz</strong><br />
+                            <strong>Ricardo Alfonso Gonzalez Vargas</strong><br /><span class="text-small">Validación de recursos<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO DE COMERCIO Y SERVICIOS</span><br><span class="text-small">Regional Tolima</span></p>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="d-flex flex-column justify-content-center"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>
