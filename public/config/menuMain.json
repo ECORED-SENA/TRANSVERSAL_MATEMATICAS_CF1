@@ -88,31 +88,25 @@
       {
         "icon": "fa fa-file-text",
         "slug": "operaciones",
-        "title": "2.4 Suma y resta",
-        "anchor": "suma"
-      },
-      {
-        "icon": "fa fa-file-text",
-        "slug": "operaciones",
-        "title": "2.5 Multiplicación de números racionales (fracciones)",
+        "title": "2.4 Multiplicación de números racionales (fracciones)",
         "anchor": "multiplicaciones"
       },
       {
         "icon": "fa fa-file-text",
         "slug": "operaciones",
-        "title": "2.6 División de fracciones",
+        "title": "2.5 División de fracciones",
         "anchor": "division"
       },
       {
         "icon": "fa fa-file-text",
         "slug": "operaciones",
-        "title": "2.7 Potencias y raíces",
+        "title": "2.6 Potencias y raíces",
         "anchor": "potencia"
       },
       {
         "icon": "fa fa-file-text",
         "slug": "operaciones",
-        "title": "2.8 Operaciones en los números irracionales",
+        "title": "2.7 Operaciones en los números irracionales",
         "anchor": "operaciones3"
       }
     ]

@@ -1,305 +1,659 @@
-<div class="container" id="aspectos">
+<div class="container" id="operaciones">
     <div class="header-ecored">
-        <h1>2. Aspectos ambientales</h1>
+        <h1>2. Operaciones aritméticas</h1>
     </div>
-    <section class="mt-5 pt-5">
-        <div class="row mt-5 pt-5 justify-content-center">
-            <div class="col-10">
-                <div class="card bg-color1">
-                    <div class="card-body text-center">
-                        <div class="avatar avatar-super card-avatar card-avatar-top"><img class="avatar-img" src="assets/images/pages/img4.png" /></div>
-                        <p class="text-white text-left mt-4">La oferta de los recursos naturales que hasta hace algunos años parecía inagotable, hoy en día ha disminuido debido al aprovechamiento irracional de estos, trayendo consigo la contaminación del aire, suelo, agua, disminución o extinción de la flora y fauna, todas estas problemáticas son consecuencia de las acciones humanas que afectan considerablemente los ecosistemas. </p>
-                        <p class="text-white text-left mt-4">Colombia es uno de los países con mayor biodiversidad biológica en el mundo y la mayoría de las áreas donde se concentran las riquezas de estos recursos naturales son territorio de comunidades étnicas. Henao (2012) define el territorio desde la perspectiva de grupo étnicos como “la unidad de atributos culturales, biológicos, sociales, políticos, que garantiza su pervivencia, donde se vive y se proyecta su presente y su futuro” (p.10). De cierta manera cualquier acción de intervención que involucre la relación entre la comunidad étnica y el medio ambiente debe estar enfocada hacia la preservación de los recursos, la cultura y costumbres.</p>
-                        <p class="text-white text-left mt-4">Conservar y proteger la biodiversidad y la identidad cultural de los pueblos étnicos es un compromiso social y ambiental que está ligado a la preservación de todos los recursos del medio ambiente incluyendo al ser humano, cualquier actividad que afecte el equilibrio biológico pone en riesgo no solo la especie afectada sino la salud de toda una comunidad. Con el fin de preservar esos territorios étnicos diversos, se deben tomar acciones para mitigar los efectos adversos generados por las actividades domésticas, productivas, culturales y económicas que desarrollan los grupos étnicos en sus territorios.</p>
+    <div class="jumbotron bg-white shadow">
+        <h3 class="txt-color1">Recordemos</h3>
+        <p>Desde que el hombre empezó a utilizar los números para cuantificar todo lo relacionado con agricultura, población y demás aspectos relacionados con los números, también empezó a realizar operaciones como añadir y quitar unidades a un conjunto determinado.</p>
+        <p>A partir de esto surgió la aritmética, la cual es la rama de las matemáticas que relaciona los números y las diferentes operaciones que se pueden realizar con los números (Suma, resta, multiplicación y división) así mismo las propiedades implícitas en dichas operaciones.</p><img class="img-fluid img-a" src="assets/images/pages/img13.png" style="max-width: 80%" />
+        <p>En este tema nos ocuparemos de las cuatro operaciones básicas: Suma, resta, multiplicación y división en los diferentes conjuntos numéricos o los números reales. Así mismo también trabajaremos la potenciación y radicación y sus propiedades.</p>
+        <p>Pero debemos tener en cuenta una regla que para las operaciones combinadas en el conjunto de los números reales es necesario conocer la jerarquía de operaciones.</p>
+        <p>Pero qué es la jerarquía de operaciones, comencemos enunciando de qué trata:</p>
+    </div><br id="jerarquia" />
+    <div class="header-ecored">
+        <h2>2.1 Jerarquía de operaciones</h2>
+    </div>
+    <div class="jumbotron bg-white shadow">
+        <p>La jerarquía de operaciones básicamente es una regla que nos determina cuáles operaciones se deben realizar primero en un determinado ejercicio que contenga varias operaciones como: sumas, restas, multiplicaciones, paréntesis, potencias y raíces. Para esto lo primero que debe realizarse es las operaciones que se encuentren agrupadas en paréntesis, llaves y corchetes, luego deben resolverse las potencias y raíces, posteriormente las divisiones y multiplicaciones en orden (De izquierda a derecha), y por último debemos resolver las sumas y restas.</p><img class="img-fluid img-a" src="assets/images/pages/img14.png" style="max-width: 80%" />
+        <p>Veamos un ejemplo:</p>
+        <div class="row justify-content-around mb-4">
+            <div class="col-8 bg-color1 text-center">
+                <p class="mb-0">3 x ( 2 x 4<sup>3 </sup>) / 4</p>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-8">
+                <h3 class="txt-color1">Paso 1</h3>
+                <p>Primero se resuelve lo que está dentro de paréntesis:</p>
+            </div>
+            <div class="col-8 bg-color1 text-center mb-4">
+                <p class="mb-0">( 2 x 4<sup>3 </sup>)</p>
+            </div>
+            <div class="col-8">
+                <p>Dentro del paréntesis se resuelve el exponente 4<sup>3</sup>, que es igual a <b>64</b></p>
+            </div>
+            <div class="col-8 bg-color1 text-center mb-4">
+                <p class="mb-0">2 x 64 = <b>128</b></p>
+            </div>
+            <div class="col-8">
+                <h3 class="txt-color1">Paso 2</h3>
+                <p>Se resuelve la multiplicación ya que se encuentra primero (a la izquierda).</p>
+            </div>
+            <div class="col-8 bg-color1 text-center mb-4">
+                <p class="mb-0">3 x 128 = <b>384</b></p>
+            </div>
+            <div class="col-8">
+                <h3 class="txt-color1">Paso 3</h3>
+                <p>Finalmente, se realiza esta división.</p>
+            </div>
+            <div class="col-8 bg-color1 text-center mb-4">
+                <p class="mb-0">384 / 4 = <b>96</b></p>
+            </div>
+        </div>
+    </div><br id="operaciones1" />
+    <div class="header-ecored">
+        <h2>2.2 Operaciones en números enteros</h2>
+    </div>
+    <div class="jumbotron bg-white shadow">
+        <h3 class="txt-color1">Suma y resta de números enteros</h3>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-11">
+                <div class="list align-items-start">
+                    <div class="list__item">
+                        <div class="list__item__bulletNumber"><span>A</span></div>
+                    </div>
+                    <div class="list__txt">
+                        <p class="mt-1"><b>Cuando los números enteros tienen el mismo signo</b>.</p>
+                        <p>Se suman los valores y se deja el signo que tengan, si son positivos signo positivo y si son negativos signo negativo. Si no se pone nada delante del número se entiende que es +.</p>
+                        <p><b>Ejemplos números enteros del mismo signo</b></p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0">( + 5 ) + ( + 4 ) = + 9</p>
+                            </div>
+                        </div>
+                        <p>Es lo mismo que.</p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0">5 + 4 = 9</p>
+                            </div>
+                        </div>
+                        <p><b>(- 5 ) + ( - 4 ) = - 9</b>. Es lo mismo que.</p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0">- 5 - 4 = - 9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list align-items-start mt-2">
+                    <div class="list__item">
+                        <div class="list__item__bulletNumber"><span>B</span></div>
+                    </div>
+                    <div class="list__txt">
+                        <p class="mt-1"><b>Cuando los números enteros tienen distinto signo</b>.</p>
+                        <p>Se restan sus valores absolutos y se pone el signo del sumando de mayor valor absoluto. (Se restan y se deja el signo del más grande en valor absoluto).</p>
+                        <p><b>Ejemplos números enteros de distinto signo</b></p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>A.</b> ( + 20 ) + ( - 10 ) = 20 - 10 = + 10</p>
+                            </div>
+                        </div>
+                        <p>20 - 10 = 10, el más grande es + 20, se pone + 10</p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>B.</b> ( - 8 ) + ( + 3 ) = - 8 + 3 = - 5</p>
+                            </div>
+                        </div>
+                        <p>8 - 3 = 5, el más grande es el - 8, se pone - 5</p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>C.</b> ( + 11 ) + ( - 2) = 11 - 2 = + 9</p>
+                            </div>
+                        </div>
+                        <p>11 - 2 = 9, el más grande es el 11, se pone + 9</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section><br id="factores" />
-    <div class="header-ecored">
-        <h2>2.1 Factores ambientales</h2>
-    </div>
-    <div class="jumbotron bg-white shadow">
-        <p>El ser humano siempre ha necesitado del medio ambiente para desarrollarse como individuo, estas interrelaciones pueden generar modificaciones que provocan problemáticas generalmente a mediano y largo plazo difícil de valorar y que alteran la dinámica y equilibrio de los ecosistemas. La contaminación que el hombre produce en estos ecosistemas también afecta al ser humano en la medida que disminuye la oferta y la calidad de los recursos, impactando directamente el estado de salud.</p>
-        <p>Actualmente el término biodiversidad ha generado interés económico por el uso de los recursos naturales en la fabricación de medicamentos, alimentos, cosméticos y otras actividades extractivas, consecuencia de estas explotaciones se han desaparecido muchos recursos valiosos de los territorios y se ha generado conflictos por el dominio de estas tierras.</p>
-        <p>Algunas de las causas directas en la pérdida de biodiversidad generadas por el ser humano son:</p><img class="img-fluid img-a" src="assets/images/pages/img5.png" style="max-width: 40%" />
-        <p>El impacto ambiental de las actividades humanas provoca la contaminación de los factores ambientales para la supervivencia de las especies en un ecosistema. </p>
-        <p>Son considerados factores ambientales:</p><img class="img-fluid img-a" src="assets/images/pages/img6.png" style="max-width: 100%" />
-        <p>La calidad y conservación de todos los factores ambientales es directamente proporcional al impacto generado en las interrelaciones entre sí. La mínima alteración en el entorno socio ambiental puede presentar impactos como la presencia de polvo, ruido, malos olores, insalubridad, generación de residuos tóxicos, los cuales afectan a las comunidades que los provocan o las que habitan en el área de influencias generando alteraciones en la salud y enfermedades a largo plazo. </p>
-        <p>Los impactos ambientales no solo lo generan las actividades cotidianas y los habitantes de una comunidad. La mayoría de estos impactos están asociados a los grandes proyectos que llegan a estas zonas afectando todo el entorno, es por esto que se requiere de la elaboración de una línea base para determinar el estado en el que se encuentran los recursos y ejercer control de todas las acciones antes, durante y después del proceso de intervención.</p>
-    </div><br id="evaluacion" />
-    <div class="header-ecored">
-        <h2>2.2 Evaluación del impacto ambiental</h2>
-    </div>
-    <div class="jumbotron bg-white shadow">
-        <h3>Protección de la calidad ambiental y calidad de vida humana</h3>
-        <p>El medio ambiente le brinda al ser humano múltiples servicios de gran importancia para el crecimiento económico y social. La naturaleza aporta elementos y fuentes de energía que se hacen indispensables para la subsistencia; pero en contraste esta recibe sus vertimientos contaminantes resultantes de los diferentes modos de producción e interacción del hombre y medio, considerados importantes para el bienestar humano y distintas formas de vida.</p>
-        <p>El nivel de vulnerabilidad ambiental se asocia al modelo de desarrollo, disponibilidad y fragilidad de los medios de subsistencia, la sobrepoblación, la cultura y la organización social de una comunidad, generando acciones favorables o adversas al medio ambiente o algunos de sus componentes provocados en la ejecución de actividades de aprovechamiento del espacio o del recurso ambiental.</p>
-        <p>La fragilidad medioambiental tiene en cuenta varios factores, por ejemplo:</p><img class="img-fluid img-a" src="assets/images/pages/img7.png" style="max-width: 40%" />
-        <p>Otro ejemplo son las amenazas naturales, socio naturales o antrópicas como la sensibilidad o debilidad de los elementos anteriormente expuestos.</p>
-        <p>Una vez tomada la decisión de avanzar en cualquier proyecto que representa alguna afectación al medio, se debe realizar una Evaluación de Impacto Ambiental simple (EIA), acorde con el procedimiento administrativo legalmente establecido.</p>
-        <p>La Evaluación del Impacto Ambiental es la herramienta para gestionar la protección del medio ambiente y valorar los impactos ambientales, identificando la relación de causa-efecto que influyen sobre el medio ambiente, la salud humana y el ecosistema producto de las actividades humanas, con el fin de predecir, valorar, interpretar y prevenir. Esta evaluación facilita la toma de decisiones y gestiona la protección del medio ambiente con las comunidades en los proyectos, planes o programas que se desarrollen en sus territorios.</p><img class="img-fluid img-a" src="assets/images/pages/img8.png" style="max-width: 100%" />
-        <p>La participación de la comunidad étnica en la evaluación de impacto ambiental es fundamental, son ellos los que ejercen las acciones al medio ambiente generando cambios positivos o negativos que pongan en peligro la biodiversidad del entorno, es por esto que de acuerdo a la inclusión de las comunidades étnicas se destaca que los proyectos que requieran licencia ambiental por parte de alguna autoridad como ANLA, CAR, CDS, deben contar con un certificado expedido por el Ministerio del Interior en cuanto a Consulta Previa, de acuerdo a la normatividad vigente.</p>
-    </div>
-    <div class="card shadow"><img class="img-fluid" src="assets/images/pages/img9.png" style="max-width: 100%" />
-        <div class="card-body bg-color2">
-            <p>La evaluación del impacto ambiental también permite identificar la vulnerabilidad en la que se encuentra el estado de salud de una población, facilitando de esta manera el diagnóstico de factores y la toma de decisiones para mitigar o corregir esta situación.</p>
+        <h3 class="txt-color1 mt-5">Multiplicación y división de números enteros</h3>
+        <p>Para estas operaciones es importante enunciar las reglas de los signos como se muestra en la siguiente imagen.</p><img class="img-fluid img-a1" src="assets/images/pages/img15.png" style="max-width: 80%" />
+        <div class="row justify-content-center mb-4">
+            <div class="col-8 bg-color1">
+                <h3 class="txt-color2 text-center">Reglas de signos</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <h4 class="txt-color2 text-center">Multiplicar</h4><br />
+                        <p class="text-center">+ por + = +</p>
+                        <p class="text-center">- por - = +</p>
+                        <p class="text-center">+ por - = -</p>
+                        <p class="text-center">- por + = -</p>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="txt-color2 text-center">Dividir</h4><br />
+                        <p class="text-center">+ entre + = +</p>
+                        <p class="text-center">- entre - = +</p>
+                        <p class="text-center">+ entre - = -</p>
+                        <p class="text-center">- entre + = -</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div><br id="normatividad" />
-    <div class="header-ecored">
-        <h2>2.3 Normatividad aplicada al medio ambiente</h2>
-    </div>
-    <div class="jumbotron bg-white shadow">
-        <p>En el siguiente listado, se realiza la compilación de la normatividad ambiental aplicable para Colombia.</p>
-        <div class="row justify-content-center px-sm-2 px-md-5 py-5">
-            <div class="col-12 col-md-10">
-                <section>
-                    <div class="timeline-card-wrapper tl--borders pt-5">
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1974</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Decreto 2811</b></p>
-                                <p>Código nacional de los recursos naturales renovables y de protección del medio ambiente.</p>
-                                <section class="mb-4">
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.minambiente.gov.co/images/GestionIntegraldelRecursoHidrico/pdf/normativa/Decreto_2811_de_1974.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Decreto 2811 del 18 de diciembre de 1974</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                                <p>Por el cual se dicta el Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.icbf.gov.co/cargues/avance/docs/decreto_2811_1974.htm" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Decreto 2811 del 18 de 1974</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-11">
+                <div class="list align-items-start">
+                    <div class="list__item">
+                        <div class="list__item__bulletNumber"><span>A</span></div>
+                    </div>
+                    <div class="list__txt">
+                        <p class="mt-1"><b>Para multiplicar dos números enteros</b>.</p>
+                        <p>Se multiplican sus valores absolutos y se aplica la regla de los signos. Cuando van dos signos seguidos hay que separarlos utilizando paréntesis.</p>
+                        <p><b>Ejemplo</b></p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>A.</b> ( + 8 ) * ( + 3 ) = + 24</p>
                             </div>
                         </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1978</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b> Decreto 1681</b></p>
-                                <p>Sobre los recursos hidrobiológicos. Para asegurar la conservación, el fomento y el aprovechamiento de los recursos hidrobiológicos y del medio acuático.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=8228" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Decreto 1681 de 1978</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1979</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Ley 09</b></p>
-                                <p>Código sanitario, su objeto principal responde a la conservación de la salud y el bienestar humano.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.minsalud.gov.co/Normatividad_Nuevo/LEY%200009%20DE%201979.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Ley 9 de 1979</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1990</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Ley 30</b></p>
-                                <p>Por medio de la cual se aprueba el Convenio de Viena para la Protección de la Capa de Ozono. Viena, 22 de marzo de 1985.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.icbf.gov.co/cargues/avance/docs/ley_0030_1990.htm" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Ley 30 de 1990</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1991</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Constitución Política de Colombia</b></p>
-                                <p><b>Art 49</b>. Atención de la salud y saneamiento ambiental.</p>
-                                <p><b>Art 58</b>. Función ecológica de la propiedad privada.</p>
-                                <p><b>Art 99</b>. Establece la obligatoriedad de tramitar el respectivo permiso de explotación de material de arrastre.</p>
-                                <p><b>Arts. 77-78</b>. Clasificación de aguas.</p>
-                                <p><b>Arts. 86 -89</b>. Derecho a uso del agua.</p>
-                                <p><b>Art 95</b>. Protección de los recursos culturales y naturales del país.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://pdba.georgetown.edu/Constitutions/Colombia/colombia91.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Constitución politica de Colombia 1991</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1992</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Lay 29</b></p>
-                                <p>Por medio de la cual se aprueba el "Protocolo de Montreal relativo a las sustancias agotadoras de la capa de ozono".</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.icbf.gov.co/cargues/avance/docs/ley_0029_1992.htm" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Ley 29 de 1992</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1993</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Lay 99</b></p>
-                                <p>Mediante el cual se crea el Ministerio de Ambiente y se organiza la administración de los recursos naturales a nivel regional. Se crean o redefinen las funciones de las Corporaciones Autónomas Regionales.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="http://www.secretariasenado.gov.co/senado/basedoc/ley_0099_1993.html" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Ley 99 de 1993</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1995</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Decreto 2107</b></p>
-                                <p>Por medio del cual se modifica parcialmente el decreto 948 de 1995 que contiene el reglamento de Protección y control de la calidad del aire.</p>
-                                <section class="mb-4">
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.minambiente.gov.co/images/BosquesBiodiversidadyServiciosEcosistemicos/pdf/Normativa/Decretos/dec_2107_301195.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Decreto 2107 de 1995</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                                <p><b>Documento CONPES 1750</b></p>
-                                <p>Establece las políticas de manejo de las aguas.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="http://www.upme.gov.co/guia_ambiental/carbon/gestion/politica/normativ/normativ.htm#BM2_8_Normatividad_sobre_el_recurso_h%C3%ADdr" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Normatividad sobre el recurso hídrico</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>1996</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Decreto 605 de 1996</b></p>
-                                <p>Reglamenta los procedimientos de potabilización y suministro de agua para consumo humano.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1358" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Decreto 605 de 1996</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>2001</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Ley 685</b></p>
-                                <p>Por el cual se expide el Código de Minas y se dictan otras disposiciones.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="http://www.secretariasenado.gov.co/senado/basedoc/ley_0685_2001.html" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_www.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Ley 685 de 2001</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>2015</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Decreto 2015</b></p>
-                                <p>Por medio del cual se expide el Decreto Único Reglamentario del Sector Ambiente y Desarrollo Sostenible.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.parquesnacionales.gov.co/portal/wp-content/uploads/2013/08/Decreto-Unico-Reglamentario-Sector-Ambiental-1076-Mayo-2015.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Decreto 1076 de 2015</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-card__head">
-                                <h3>2017</h3>
-                            </div>
-                            <div class="timeline-card__body">
-                                <p><b>Resolución 2254</b></p>
-                                <p>Por la cual se adopta la norma de calidad del aire ambiente y se dictan otras disposiciones.</p>
-                                <section>
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto"><a class="media-link" href="https://www.minambiente.gov.co/images/normativa/app/resoluciones/96-res%202254%20de%202017.pdf" target="_blank"><img class="media-link-icon" src="assets/images/icons/icon_pdf.svg" alt="" />
-                                                <div class="media-link-title">
-                                                    <p>Resolución 2254 de 2017</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </section>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>B.</b> ( - 3 ) * ( - 2 ) = + 6</p>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+                <div class="list align-items-start mt-2">
+                    <div class="list__item">
+                        <div class="list__item__bulletNumber"><span>B</span></div>
+                    </div>
+                    <div class="list__txt">
+                        <p class="mt-1"><b>Para dividir dos números enteros</b>.</p>
+                        <p>Se divide el dividendo entre el divisor y se aplica la regla de los signos. Una división es exacta cuando el resto es 0.</p>
+                        <p><b>Ejemplo</b></p>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>A.</b> ( - 15 ) ÷ ( 15 ) = - 1</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around mb-4">
+                            <div class="col-8 bg-color1 text-center">
+                                <p class="mb-0"><b>B.</b> 8 ÷ 4 = + 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <p>Ahora realicemos un problema en el que podamos utilizar la información presentada.</p>
+        <div class="row rounded bg-color1 align-items-center">
+            <div class="col">
+                <p>En un depósito hay 1200 litros de leche. Por la parte superior un tubo vierte en el depósito 25 litros por minuto, y por la parte inferior por otro tubo salen 35 litros por minuto. <b>¿Cuántos litros de agua habrá en el depósito después de 20 minutos de funcionamiento?</b></p>
+            </div>
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img16.png" style="max-width: 80%" /></div>
+        </div>
+        <div class="row justify-content-around mt-5">
+            <div class="col-5 text-center"><img class="img-fluid img-a1" src="assets/images/pages/img17.png" style="max-width: 50%" />
+                <p>1000 litros de leche</p>
+            </div>
+            <div class="col-5 text-center"><img class="img-fluid img-a1" src="assets/images/pages/img18.png" style="max-width: 50%" />
+                <p>850 Litros de leche</p>
+            </div>
+        </div>
+        <h3 class="txt-color2 mt-5">Respuesta</h3>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <h3 class="txt-color1 mt-4">Paso 1</h3>
+                <p>Lo primero que debemos realizar es pasar el problema a términos aritméticos para empezar a resolverlo y sacamos los datos cuantitativos.</p>
+                <h3 class="txt-color1 mt-4">Paso 2</h3>
+                <p>1200 litros es la cantidad inicial de leche.</p>
+                <h3 class="txt-color1 mt-4">Paso 3</h3>
+                <p>Luego debemos calcular la cantidad de leche que ingresa al depósito en los 20 minutos de funcionamiento: 25 litros que ingresan en un minuto lo multiplicamos por la cantidad de minutos que son veinte:</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">( 25 litros * 20 minutos )</p>
+                    </div>
+                </div>
+                <h3 class="txt-color1 mt-4">Paso 4</h3>
+                <p>Así mismo calculamos la cantidad de leche que sale del depósito en los mismo 20 minutos: 35 litros que salen por minuto lo multiplicamos por la cantidad de minutos que son veinte:</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">( 35 litros * 20 minutos )</p>
+                    </div>
+                </div>
+                <h3 class="txt-color1 mt-4">Paso 5</h3>
+                <p>Ahora calculamos la cantidad total de leche que queda en el depósito después de 20 minutos.</p>
+                <p>A la leche que hay en el depósito, le sumamos la leche que ingresa y le restamos la leche que sale y quedaría una expresión aritmética de esta forma:</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">1200 litros + ( 25 litros * 20 minutos ) – ( 35 litros * 20 minutos )</p>
+                    </div>
+                </div>
+                <p>Resolvemos los paréntesis y nos queda.</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">1200 litros + 500 litros – 700 litros = 1000 litros</p>
+                    </div>
+                </div>
+                <p>Luego realizamos las sumas y restas y nos da como resultado:</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0"><b>1000 litros quedan en el depósito</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+                <h1 class="text-right mb-0">Respuesta Correcta</h1>
+            </div>
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img17.png" style="max-width: 50%" /></div>
+            <div class="col-4">
+                <p class="mb-0">1000 litros de leche</p>
+            </div>
+        </div>
+    </div><br id="operaciones2" />
+    <div class="header-ecored">
+        <h2>2.3 Operaciones en los números racionales</h2>
+    </div>
+    <div class="jumbotron shadow bg-white">
+        <p>Recordemos que los números racionales también pueden ser nombrados como fracciones. Y que una fracción es dividir cualquier cantidad en cantidades iguales y tomar algunas de esas partes.</p><img class="img-fluid img-a" src="assets/images/pages/img19.png" style="max-width: 100%" />
+        <p>Empecemos a realizar operaciones de suma y resta de fracciones homogéneas. Son aquellas que tienen igual denominador. </p>
+        <p>Para sumar o restar números racionales homogéneos se coloca el mismo denominador y se suman o restan los numeradores así:</p><img class="img-fluid img-a" src="assets/images/pages/img20.png" style="max-width: 80%" />
+        <p>Ahora miremos el proceso que realizamos cuando los denominadores son distintos, lo que llamamos <b>operaciones con fracciones heterogéneas</b>.</p>
+        <p>Para adicionar o sustraer números racionales heterogéneos, se multiplican los denominadores entre sí y ese será el denominador de la respuesta, luego se multiplica el numerador de la primera fracción por el denominador de la segunda. Se coloca el mismo signo (de operación) y se procede a multiplicar el numerador de la segunda fracción por el denominador de la primera fracción. En cada caso se debe simplificar la respuesta si es posible.</p>
+        <h3 class="txt-color2 mt-5">Ejemplo</h3>
+        <div class="row justify-content-around mb-4">
+            <div class="col-8 bg-color1 text-center">
+                <p class="mb-0">3 / 4 + 5 / 7</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <h3 class="txt-color1 mt-4">Paso 1</h3>
+                <p>Se multiplican los denominadores.</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">4 * 7 = <b>28</b></p>
+                    </div>
+                </div>
+                <h3 class="txt-color1 mt-4">Paso 2</h3>
+                <p>Se multiplican el numerador de la primera fracción por el denominador de la segunda.</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">3 * 7 = <b>21</b></p>
+                    </div>
+                </div>
+                <h3 class="txt-color1 mt-4">Paso 3</h3>
+                <p>Se coloca el signo más. ( + )</p>
+                <h3 class="txt-color1 mt-4">Paso 4</h3>
+                <p>Se multiplica el numerador de la segunda fracción por el denominador de la primera.</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">4 * 5 = <b>20</b></p>
+                    </div>
+                </div>
+                <h3 class="txt-color1 mt-4">Paso 5</h3>
+                <p>Por último, sumamos los dos números que nos quedan en el en la parte de arriba.</p>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-8 bg-color1 text-center">
+                        <p class="mb-0">21 + 20 = 41</p>
+                    </div>
+                </div>
+            </div>
+        </div><img class="img-fluid img-a" src="assets/images/pages/img21.png" style="max-width: 80%" />
+        <p>Ahora veamos en que se puede aplicar la suma y resta de fracciones en un caso cotidiano.</p>
+        <div class="row rounded bg-color1 align-items-center">
+            <div class="col">
+                <p>Un campesino siembra <b>2 / 7</b> de su finca con papa y <b>1 / 5</b> con tomate. Responde:</p>
+            </div>
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img22.png" style="max-width: 80%" /></div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-11">
+                <p><b>A.</b> ¿Qué fracción de su finca tiene sembrada?</p>
+                <p><b>B.</b> ¿Qué fracción de su finca está sin sembrar?</p>
+            </div>
+        </div><img class="img-fluid img-a" src="assets/images/pages/img23.png" style="max-width: 80%" />
+        <p>Para el primer interrogante debemos sumar las dos porciones de finca que están sembradas.</p><img class="img-fluid img-a" src="assets/images/pages/img24.png" style="max-width: 80%" />
+        <p>La fracción de finca que se encuentra sembrada con papa y tomate es <b>17 / 35</b>.</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+                <h1 class="text-right mb-0">Respuesta Correcta</h1>
+            </div>
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img25.png" style="max-width: 50%" /></div>
+            <div class="col-4">
+                <p class="mb-0">17 / 35</p>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <p>Para dar respuesta al segundo interrogante procedemos de la siguiente manera.</p>
+        <div class="row rounded bg-color1 align-items-center">
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img26.png" style="max-width: 80%" /></div>
+            <div class="col">
+                <p>La fracción que representa el total de la finca puede expresarse como <b>35 / 35</b> que es igual a <b>1</b>, ya que todo el terreno expresado en fracciones debe ser igual a 1 porque sería el terreno en general.</p>
+            </div>
+        </div><img class="img-fluid img-a" src="assets/images/pages/img27.png" style="max-width: 80%" />
+        <p>Ahora procedemos a realizar la resta así:</p><img class="img-fluid img-a" src="assets/images/pages/img28.png" style="max-width: 80%" />
+        <p>O bien también se puede realizar de la siguiente forma:</p><img class="img-fluid img-a" src="assets/images/pages/img29.png" style="max-width: 80%" />
+        <p>Recordemos que es una resta de fracciones homogéneas por lo tanto se pone en el resultado el mismo denominador y se operan los numeradores.</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+                <h1 class="text-right mb-0">Respuesta Correcta</h1>
+            </div>
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img25.png" style="max-width: 50%" /></div>
+            <div class="col-4">
+                <p class="mb-0">18 / 35</p>
+            </div>
+        </div>
+    </div><br id="multiplicaciones" />
+    <div class="header-ecored">
+        <h2>2.4 Multiplicación de números racionales (fracciones)</h2>
+    </div>
+    <div class="jumbotron shadow bg-white">
+        <p>El producto de dos números racionales es otro número racional y se realiza multiplicando los numeradores entre sí y denominadores entre sí.</p>
+        <p>Pero mejor veamos un ejemplo:</p><img class="img-fluid img-a" src="assets/images/pages/img30.png" style="max-width: 80%" />
+        <p>Para evidenciar en que se aplica la multiplicación de fracciones continuemos con la situación presentada anteriormente del campesino y sus cultivos.</p>
+        <div class="row justify-content-around mb-4">
+            <div class="col-8 bg-color1 text-center">
+                <p class="mb-0">Teniendo en cuenta que la finca del campesino cuenta con <b>1000 m</b><sup><b>2</b> </sup>y la fracción de ese terreno sembrada es de <b>17 / 35</b>.</p>
+            </div>
+        </div>
+        <p><b>A</b>. ¿Cuánto mide en metros cuadrados la parte del terreno que se encuentra sembrada?</p>
+        <p><b>B</b>. Teniendo en cuenta que 2 / 7 se encuentra sembrada con papa, ¿Cuál es el área que se encuentra con papa?</p>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <p>Para encontrar la medida o el área del terreno sembrado multiplicamos el total de metros cuadrados (1000) por la fracción que se encuentre sembrada así:</p>
+                <p><b>Le ponemos el 1 de denominador al 1000 para que quede expresado como fracción</b>.</p><img class="img-fluid img-a" src="assets/images/pages/img31.png" style="max-width: 80%" />
+                <h3 class="txt-color1">Simplificamos:</h3>
+                <p>Recordemos que simplificar es dividir tanto el numerador como el denominador por el mismo número primo. En este caso el <b>17000</b> es divisible por <b>2</b> y por <b>5</b>, mientras que el <b>35</b> es divisible por <b>5</b> y por <b>7</b>. Así que dividimos ambos números por <b>5</b> y nos queda:</p><img class="img-fluid img-a" src="assets/images/pages/img32.png" style="max-width: 80%" />
+                <p>Por último, dividimos la fracción y nos da como resultados que la cantidad de terreno que se encuentra sembrado es de <b>485.71 m</b><sup><b>2</b></sup></p>
+                <p>La fracción quedaría.</p><img class="img-fluid img-a" src="assets/images/pages/img33.png" style="max-width: 80%" />
+            </div>
+        </div>
+    </div><br id="division" />
+    <div class="header-ecored">
+        <h2>2.5 División de fracciones</h2>
+    </div>
+    <div class="jumbotron shadow bg-white">
+        <p>Para dividir dos números racionales se multiplica el numerador del primer número racional con el denominador del segundo número racional, y el numerador del segundo número con el denominador del primero. (Se multiplica en cruz) así:</p><img class="img-fluid img-a" src="assets/images/pages/img34.png" style="max-width: 80%" />
+        <p>Para realizar la división también se puede realizar la ley de extremos y medios.</p><img class="img-fluid img-a" src="assets/images/pages/img35.png" style="max-width: 80%" />
+        <div class="hr"></div>
+        <p>Ahora miremos una aplicación cotidiana.</p>
+        <div class="row rounded bg-color1 align-items-center">
+            <div class="col">
+                <p class="mb-0">Andrea compró un queso que pesa <b>3 / 4</b> de kilo, si lo partió en porciones de <b>1 / 8</b> de kilo, <b>¿Cuántas porciones salieron de la totalidad del queso?</b>.</p>
+            </div>
+            <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img36.png" style="max-width: 60%" /></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <p class="mt-4">Lo que debemos hacer es dividir la cantidad de queso que hay entre 1/8 que es la porción que va a quedar.</p><img class="img-fluid img-a" src="assets/images/pages/img37.png" style="max-width: 60%" />
+                <p>La cantidad de porciones de <b>1 / 8</b> que salen es de <b>6</b>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card shadow"><img class="img-fluid" src="assets/images/pages/img38.png" style="max-width: 100%" />
+        <div class="card-body">
+            <h3 class="txt-color1">¿Sabías qué?</h3>
+            <p>La pintura denominada el hombre de Vitruvio busca representar por medio de la simetría arquitectónica cómo sería el hombre perfecto (físicamente). </p>
+            <p class="mt-3">Algunas de las conclusiones a las que llegó matemáticamente el creador Marco Vitruvio fueron las proporciones presentes en el cuerpo humano:</p>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="list align-items-start mt-4">
+                        <div class="list__item">
+                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg" /></div>
+                        </div>
+                        <div class="list__txt">
+                            <p class="mt-1">Desde el inicio de la barbilla hasta la parte más arriba de la frente mide <b>1 / 10</b> del total de la altura.</p>
+                        </div>
+                    </div>
+                    <div class="list align-items-start mt-4">
+                        <div class="list__item">
+                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg" /></div>
+                        </div>
+                        <div class="list__txt">
+                            <p class="mt-1">La cabeza, desde la coronilla hasta el final de la barbilla mide <b>1 / 8</b> en relación con la altura de todo el cuerpo.</p>
+                        </div>
+                    </div>
+                    <div class="list align-items-start mt-4">
+                        <div class="list__item">
+                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg" /></div>
+                        </div>
+                        <div class="list__txt">
+                            <p class="mt-1">Iniciando desde el cuero cabelludo hasta el final del esternón equivale a <b>1 / 6</b> del total de la altura del cuerpo.</p>
+                        </div>
+                    </div>
+                    <div class="list align-items-start mt-4">
+                        <div class="list__item">
+                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg" /></div>
+                        </div>
+                        <div class="list__txt">
+                            <p class="mt-1">Desde la mitad del pecho hasta la coronilla equivale a <b>1 / 4</b> del total del cuerpo.</p>
+                        </div>
+                    </div>
+                    <div class="list align-items-start mt-4">
+                        <div class="list__item">
+                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg" /></div>
+                        </div>
+                        <div class="list__txt">
+                            <p class="mt-1">La longitud de la frente mide <b>1 / 5</b> en relación con todo el rostro.</p>
+                        </div>
+                    </div>
+                    <div class="list align-items-start mt-4">
+                        <div class="list__item">
+                            <div class="list__item__icon"><img class="img-fluid" src="assets/images/pages/v1.svg" /></div>
+                        </div>
+                        <div class="list__txt">
+                            <p class="mt-1">La longitud del pie equivale al <b>1 / 6</b> del total del cuerpo. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6"><img class="img-fluid img-a" src="assets/images/pages/img39.png" style="max-width: 60%" /></div>
+            </div>
+        </div>
+    </div><br id="potencia" />
+    <div class="header-ecored">
+        <h2>2.6 Potencias y raíces</h2>
+    </div>
+    <div class="jumbotron shadow bg-white">
+        <h3 class="txt-color1">Potenciación</h3>
+        <p>La potenciación es la multiplicación de un número (n) veces, el mismo número entero o racional, en el la base es el número racional que multiplicaremos y n (Denominado exponente) es el número de veces que multiplicamos la base.</p>
+        <div class="row justify-content-around mb-4">
+            <div class="col-8 bg-color1 text-center">
+                <p class="mb-0">a<sup>n </sup>= a . a . a . a . n veces</p>
+            </div>
+        </div>
+        <p>Para ello podemos comprender algunas de las siguientes propiedades de las potencias.</p>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <table class="table table-striped m-0">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="table1"><i><b>Propiedad</b></i></th>
+                            <th class="table1"><i><b>Exposición</b></i></th>
+                            <th class="table1"><i><b>Ejemplo</b></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table2"><b>Potencia de base cero</b>.</td>
+                            <td class="table2">Cualquier potencia de base 0 es igual a 0. 0<sup>m </sup>= 0</td>
+                            <td class="table2">0<sup>4 </sup>= 0</td>
+                        </tr>
+                        <tr>
+                            <td class="table3"><b>Potencia de exponente cero</b>.</td>
+                            <td class="table3">Cualquier potencia de exponente 0 es igual a 1. X<sup>0 </sup>= 1</td>
+                            <td class="table3">5<sup>0 </sup>= 1</td>
+                        </tr>
+                        <tr>
+                            <td class="table2"><b>Potencia de exponente 1</b>.</td>
+                            <td class="table2">Cualquier potencia de exponente 1 es el mismo número. X<sup>1 </sup>= X</td>
+                            <td class="table2">7<sup>1 </sup>= 7</td>
+                        </tr>
+                        <tr>
+                            <td class="table3"><b>Producto de potencias de la misma base</b>.</td>
+                            <td class="table3">El producto de potencias de la misma base es la misma base y el exponente la suma de los exponentes. X<sup>m </sup>+ X<sup>n </sup>= X<sup>m + n</sup></td>
+                            <td class="table3">2<sup>4 </sup>* 2<sup>6 </sup>= 2<sup>4 + 6 </sup>= 2<sup>10</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table2"><b>Cociente de potencias de la misma base</b>.</td>
+                            <td class="table2">El producto de potencias de la misma base es la misma base y el exponente de la suma de los exponentes. X<sup>m </sup>/ X<sup>n </sup>= X<sup>m - n</sup></td>
+                            <td class="table2">3<sup>5 </sup>/ 3<sup>2 </sup>= 3<sup>5 - 2 </sup>= 3<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table3"><b>Potencia de una potencia</b>.</td>
+                            <td class="table3">La potencia de una potencia es la misma base y el exponente el producto de los exponentes. ( X<sup>m </sup>)<sup>n </sup>= X<sup>m * n</sup></td>
+                            <td class="table3">( 6<sup>2 </sup>)<sup>4 </sup>= 6<sup>2 * 4 </sup>= 6<sup>8</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table2"><b>Producto de potencias con el mismo exponente</b>.</td>
+                            <td class="table2">El producto de potencias con el mismo exponente es una potencia con el mismo exponente y como base el producto de las bases. X<sup>m </sup>* Y<sup>m </sup>= ( X * Y)<sup>m</sup></td>
+                            <td class="table2">2<sup>3 </sup>* 4<sup>3 </sup>= ( 2 * 4 )<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table3"><b>Cociente de potencias con el mismo exponente</b>.</td>
+                            <td class="table3">El cociente de potencias es una potencia con el mismo exponente y con base el cociente de las bases. X<sup>m </sup>/ Y<sup>m </sup>= ( X / Y )<sup>m</sup></td>
+                            <td class="table3">6<sup>3 </sup>/ 2<sup>3 </sup>= ( 6 / 2 )<sup>3 </sup>= 3<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table2"><b>Potencia de exponente negativo</b>.</td>
+                            <td class="table2">La potencia de exponente negativo es igual al inverso de la potencia, con exponente positivo. X<sup>-m </sup>= 1 / X<sup>m</sup></td>
+                            <td class="table2">4<sup>-2 </sup>/ 2 = 1 / 4<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table3"><b>Potencia de exponente racional</b>.</td>
+                            <td class="table3">La potencia de exponente racional es igual a una raíz, donde el denominador es el índice de la raíz y el numerador el exponente del radicando. X<sup>m / n</sup>= <sup>n</sup>√ X<sup>m</sup></td>
+                            <td class="table3">7<sup>4 / 3 </sup>= <sup>3</sup>√ 7<sup>4</sup></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h3 class="txt-color1 mt-6">Radicación</h3><img class="img-fluid img-a" src="assets/images/pages/img40.png" style="max-width: 80%" />
+        <p>La radicación es conocida como la operación contraria a la potenciación en donde se conoce el índice de la raíz y el radicando de este modo se puede encontrar un número que multiplicado el número de veces que enuncie el índice nos de como resultado el radicando.</p>
+        <h3 class="txt-color2 text-center">Propiedades de la potencia</h3>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <table class="table table-striped m-0">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="table1"><i><b>Operación</b></i></th>
+                            <th class="table1"><i><b>Ejemplo</b></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table2">Producto: <sup>n</sup>√ a * <sup>n</sup>√ b = <sup>n</sup>√ a * b</td>
+                            <td class="table2"> <sup>3</sup>√ 4 * <sup>3</sup>√ 6 = <sup>3</sup>√ 24</td>
+                        </tr>
+                        <tr>
+                            <td class="table3">Cociente: <sup>n</sup>√ a : <sup>n</sup>√ b = <sup>n</sup>√ a / b</td>
+                            <td class="table3"><sup>3</sup>√ 4 : <sup>3</sup>√ 6 = <sup>3</sup>√ 4 / 6</td>
+                        </tr>
+                        <tr>
+                            <td class="table2">Potencia: ( <sup>n</sup>√ a )<sup>m </sup>= <sup>n</sup>√ a<sup>m</sup></td>
+                            <td class="table2">( <sup>5</sup>√ 4 )<sup>6 </sup>= <sup>5</sup>√ 4<sup>6</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="table3">Simplificar: ( <sup>n</sup>√ a<sup>n</sup>) = a</td>
+                            <td class="table3">( <sup>3</sup>√ 2<sup>3</sup>) = 2</td>
+                        </tr>
+                        <tr>
+                            <td class="table2">Raíz de raíz: ( <sup>p</sup>√ <sup>n</sup>√ a ) = <sup>n * p </sup>√ a</td>
+                            <td class="table2">( <sup>4</sup>√ <sup>2</sup>√ 3 ) = <sup>8 </sup>√ 3</td>
+                        </tr>
+                        <tr>
+                            <td class="table3">Introducir: ( a <sup>n</sup>√ a<sup>n</sup>) = <sup>n</sup>√ a<sup>n </sup>* a = <sup>n</sup>√ a<sup>n + 1</sup></td>
+                            <td class="table3">( 4 <sup>3</sup>√ 4 ) = <sup>3</sup>√ 4<sup>3 </sup>* 4 = <sup>3</sup>√ 4<sup>4</sup></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div><br id="operaciones3" />
+    <div class="header-ecored">
+        <h2>2.7 Operaciones en los números irracionales</h2>
+    </div>
+    <div class="card shadow"><img class="img-fluid" src="assets/images/pages/img41.png" style="max-width: 100%" />
+        <div class="card-body">
+            <p>Las operaciones con números irracionales tienen que ver con algunas reglas o procedimientos que se realizan para reducir una expresión aritmética que contenga números irracionales y no tener que acudir a una calculadora.</p>
+            <div class="hr"></div>
+            <h3 class="txt-color1 mt-4">Suma y resta</h3>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <p>Para la suma de y resta de expresiones con números irracionales debemos identificar cuáles son los términos semejantes bien sea el mismo número irracional como pi, o que la raíz tenga el mismo radicando (Número dentro de la raíz). Si se tienen términos semejantes simplemente se pueden juntar las cantidades y poner el mismo término semejante como pi + 2 pi = 3pi. Pero si por el contrario no son términos semejantes la expresión se deja expresada. Miremos algunos ejemplos con operaciones en los números irracionales.</p>
+                </div>
+                <div class="col-12 col-md-6"><img class="img-fluid img-a1" src="assets/images/pages/img42.png" style="max-width: 40%" /></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h3 class="txt-color2 mt-4">Ejemplo</h3>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p class="mb-0">√a + 2√a + 3√a - 4√a = 2√a</p>
+                        </div>
+                    </div>
+                    <p>Como todas las raíces son semejantes se operan los números que las acompañan y se pone la misma raíz y radicando.</p>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p class="mb-0">√2 + 2√3 + 3√2 - 4√3 + 3√2 = ¿?</p>
+                        </div>
+                    </div>
+                    <p>En este caso existen raíces semejantes de 2 y 3, entonces operamos las raíces semejantes de cada una así:</p>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p>√2 + 3√2 + 3√2 = 7√2</p>
+                            <p class="mb-0">2√3 - 4√3 = -2√3</p>
+                        </div>
+                    </div>
+                    <p>Por lo tanto, el resultado queda expresado de la siguiente forma ya que son números irracionales y para la suma y la resta no aplica la propiedad distributiva.</p>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p class="mb-0">7√2 - 2√3</p>
+                        </div>
+                    </div>
+                    <div class="row rounded bg-color1 align-items-center">
+                        <div class="col-auto"><img class="img-fluid img-a1" src="assets/images/pages/img43.png" style="max-width: 60%" /></div>
+                        <div class="col">
+                            <h3 class="txt-color2">Nota</h3>
+                            <p class="mb-0">Para efectuar sumas y/o restas de radicales tienen que ser siempre semejantes.</p>
+                        </div>
+                    </div>
+                    <p class="py-4">Por lo general cuando son radicales de números muy grandes se pueden descomponer en factores primos.</p>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p>√28 = √2<sup>2 </sup>7<sup>1 </sup>= 2√7</p>
+                            <p class="mb-0">√63 = √3<sup>3 </sup>7<sup>1 </sup>= 3√7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="txt-color1 mt-4 text-center">Suma y resta de radicales</h3><img class="img-fluid img-a" src="assets/images/pages/img44.png" style="max-width: 60%" />
+            <div class="hr"></div>
+            <h3 class="txt-color1 mt-4">Multiplicación</h3>
+            <p>En el producto y la división si se da la propiedad distributiva. La raíz de un producto es igual al producto de las raíces y viceversa. Lo mismo para el cociente.</p>
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h3 class="txt-color2 mt-4">Ejemplo</h3><img class="img-fluid img-a" src="assets/images/pages/img45.png" style="max-width: 80%" />
+                    <p>En este caso podemos multiplicar todos números enteros que acompañen las raíces (1, 3 y 2) y luego como las raíces tienen el mismo índice (cúbico) podemos multiplicar todos los radicandos entre sí y dejarlos dentro de la raíz así:</p><img class="img-fluid img-a" src="assets/images/pages/img46.png" style="max-width: 80%" />
+                    <p class="mb-4">Por lo tanto, el resultado es igual a 6 <sup>3</sup>√8.</p>
+                    <p>Como la <sup>3</sup>√8 = 2 porque es un número que multiplicado 3 veces da como resultado 8.</p>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p class="mb-0">2 x 2 x 2 = 8</p>
+                        </div>
+                    </div>
+                    <p>Entonces el resultado quedaría.</p>
+                    <div class="row justify-content-around mb-4">
+                        <div class="col-8 bg-color1 text-center">
+                            <p class="mb-0">6 x 2 = 12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <h3 class="txt-color1 mt-4">División</h3>
+            <p>Por último, enunciamos como sería la división de números irracionales.</p><img class="img-fluid img-a" src="assets/images/pages/img47.png" style="max-width: 80%" />
+            <p>En este caso como 24 no tiene raíz exacta y 6 tampoco (Son números irracionales) podemos aplicar la propiedad distributiva con respecto a la división de esta forma.</p><img class="img-fluid img-a" src="assets/images/pages/img48.png" style="max-width: 80%" />
+            <p>El resultado queda igual a 2 porque a cuatro si se le puede sacar raíz cuadrada exacta número racional).</p>
         </div>
     </div>
 </div>
